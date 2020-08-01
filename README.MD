@@ -12,6 +12,10 @@ It supports most PKGBUILD metadata fields, except the following:
 * Parsing code in packaging functions (E.G. prepare, build, check, package, etc).
 * Split packages are only partially supported.
 
+## Dependencies
+
+* [jq](https://stedolan.github.io/jq/) - Command-line JSON processor.
+
 ## WARNING!
 
 In order to parse PKGBUILD files, this script sources them directly (PKGBUILD files are compliant bash scripts after all).

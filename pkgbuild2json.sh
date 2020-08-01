@@ -81,6 +81,11 @@ source "$install_script" || error "Failed to source $install_script."
         pkg_source="$(toArray source)"
         pkg_noextract="$(toArray noextract)"
         pkg_md5sums="$(toArray md5sums)"
+        pkg_sha1sums="$(toArray sha1sums)"
+        pkg_sha224sums="$(toArray sha224sums)"
+        pkg_sha256sums="$(toArray sha224sums)"
+        pkg_sha512sums="$(toArray sha512sums)"
+        pkg_b2sums="$(toArray b2sums)"
         pkg_validpgpkeys="$(toArray validpgpkeys)"
 
 # Output the converted JSON
@@ -109,6 +114,11 @@ jq -n \
         --argjson source "$pkg_source" \
         --argjson noextract "$pkg_noextract" \
         --argjson md5sums "$pkg_md5sums" \
+        --argjson sha1sums "$pkg_sha1sums" \
+        --argjson sha224sums "$pkg_sha224sums" \
+        --argjson sha256sums "$pkg_sha256sums" \
+        --argjson sha512sums "$pkg_sha512sums" \
+        --argjson b2sums "$pkg_b2sums" \
         --argjson validpgpkeys "$pkg_validpgpkeys" \
                     '{
     "maintainers": $maintainers,
@@ -135,6 +145,11 @@ jq -n \
         "source": $source,
         "noextract": $noextract,
         "md5sums": $md5sums,
+        "sha1sums": $sha1sums,
+        "sha224sums": $sha224sums,
+        "sha256sums": $sha256sums,
+        "sha512sums": $sha512sums,
+        "b2sums": $b2sums,
         "validpgpkeys": $validpgpkeys
     }'
     else

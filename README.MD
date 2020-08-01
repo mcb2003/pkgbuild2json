@@ -14,7 +14,7 @@ It supports most PKGBUILD metadata fields, except the following:
 
 ## WARNING!
 
-In order to parse PKGBUILD files, this script sources them directly (PKGBUILD files are complient bash scripts after all).
+In order to parse PKGBUILD files, this script sources them directly (PKGBUILD files are compliant bash scripts after all).
 Because of this, a malicious PKGBUILD could be created that automatically executes code when it is parsed by this tool.
 Please insure your PKGBUILDS are not malicious before passing them to this script!
 
@@ -37,7 +37,7 @@ the Free Software Foundation, either version 3 of the License, or
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+GNU Lesser General Public License for more details.
 
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.

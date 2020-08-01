@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# pkgbuild2json: Parss and converts Arch Linux PKGBUILDS into JSON
+# pkgbuild2json: Parses and converts Arch Linux PKGBUILDS into JSON
 # Copyright (C) 2020  Michael Connor Buchan
 #
 # This program is free software: you can redistribute it and/or modify

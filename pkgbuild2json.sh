@@ -58,11 +58,6 @@ main() {
 
             # Source the PKGBUILD to get the rest of the variables
         source "$PKGBUILD" || error "Failed to source $1."
-        # Source the install file (if any)
-        if [ "$install" != "" ]; then
-            install_script="$(dirname $PKGBUILD)/$install"
-source "$install_script" || error "Failed to source $install_script."
-        fi
 
         # Convert the arrays to json
         pkg_name="$(toArray pkgname)"
